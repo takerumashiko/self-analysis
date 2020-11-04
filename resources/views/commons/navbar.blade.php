@@ -1,5 +1,5 @@
-<header class="mb-4">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
         
         <a class="navbar-brand" href="/">私の自己分析</a>
 
@@ -14,7 +14,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">自己分析を行う</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">いいね欄</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">ユーザ一覧</a></li>
-                    <li class="nav-item">{!! link_to_route('logout.get','ログアウト') !!}</li>
+                    <li class="nav-item">{!! link_to_route('logout.get','ログアウト',[],['class' => 'nav-link']) !!}</li>
                 @else
                     <li class="nav-item">{!! link_to_route('signup.get','アカウント登録',[],['class' => 'nav-link']) !!}</li>
                     <li class="nav-item">{!! link_to_route('login','ログイン',[],['class' => 'nav-link']) !!}</li>

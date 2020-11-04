@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('gender');
             $table->integer('age');
-            $table->boolean('is_private');
+            $table->boolean('is_private')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="text-center">
+    <div class="mt-5 text-center">
         <h1>アカウント登録</h1>
     </div>
     
@@ -11,17 +11,28 @@
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
                     {!! Form::label('name', '名前') !!}
-                    {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
+                    {!! Form::text('name', old('name'),['class' => 'form-control']) !!}
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::label('gender', '性別') !!}
-                    {!! Form::text('gender', old('gender'), ['class' => 'form-control']) !!}
+                    {!! Form::label('gender', '性別') !!}<br>
+                    {!! Form::radio('gender','男性') !!}
+                    男性
+                    {!! Form::radio('gender','女性') !!}
+                    女性
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::label('age', '年齢') !!}
-                    {!! Form::text('age', old('age'), ['class' => 'form-control']) !!}
+                    {!! Form::label('age', '年齢') !!}<br>
+                    {!! Form::selectRange('age',0,100, old('age'),['class' => 'field']) !!}
+                </div>
+                
+                <div class="form-group">
+                    {!! Form::label('is_private', '自己分析を非公開にする') !!}<br>
+                    {!! Form::radio('is_private',0) !!}
+                    はい
+                    {!! Form::radio('is_private',1,true) !!}
+                    いいえ
                 </div>
 
                 <div class="form-group">
@@ -30,7 +41,7 @@
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password', 'パスワード') !!}
+                    {!! Form::label('password', 'パスワード (8文字以上)') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
@@ -38,12 +49,12 @@
                     {!! Form::label('password_confirmation', '確認') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
-
-                {!! Form::submit('アカウント登録', ['class' => 'btn btn-lg btn-info btn-block']) !!}
+                
+                <div class="mt-5">
+                    {!! Form::submit('アカウント登録', ['class' => 'btn btn-lg btn-success btn-block']) !!}
+                </div>
+                
             {!! Form::close() !!}
         </div>
     </div>
 @endsection 
-            
-        </div>
-    </div> 
