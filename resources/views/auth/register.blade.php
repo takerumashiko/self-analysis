@@ -5,7 +5,7 @@
         <h1>アカウント登録</h1>
     </div>
     
-    <div class="row">
+    <div class="row mr-0 ml-0">
         <div class="col-sm-6 offset-sm-3">
             
             {!! Form::open(['route' => 'signup.post']) !!}

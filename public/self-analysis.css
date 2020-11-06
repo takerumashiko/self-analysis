@@ -9,6 +9,11 @@
     color: white;
     text-shadow: 1px 1px 2px silver;
 }
+.frame{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background:white;
+}
 .height{
     color: white;
     line-height: 2;

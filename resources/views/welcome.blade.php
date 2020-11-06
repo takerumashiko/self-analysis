@@ -14,7 +14,7 @@
                     他のユーザーの自己分析シートを閲覧することもできます！
                 </p>
                 
-                <h2 class="mt-5 mb-3 mark">まずは、アカウントを登録しましょう！！</h2>
+                <h2 class="mt-5 mb-3 frame">まずは、アカウントを登録しましょう！！</h2>
                 <div class="row">
                     <div class="col-md">
                         <p class="mt-3 text-white lead">アカウントをお持ちでない方</p>
