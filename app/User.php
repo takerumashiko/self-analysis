@@ -36,4 +36,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function answers()
+    {
+        return $this->belongsToMany(Question::class,'answers','user_id','question_id')->withTimestamps();  
+    }
+    
+    public function loadRelationshipCounts()
+    {
+        $this->loadCount(['answers']);
+    }
+    
+    public function is_answering($questionId)
+    {
+        // 回答しているユーザの中に $questionIdのものが存在するか
+        return $this->answers()->where('question_id', $questionId)->exists();
+    }
 }

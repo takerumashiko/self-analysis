@@ -50,7 +50,7 @@
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
                 
-                <div class="mt-5">
+                <div class="mt-5 mb-5">
                     {!! Form::submit('アカウント登録', ['class' => 'btn btn-lg btn-success btn-block']) !!}
                 </div>
                 
