@@ -28,6 +28,16 @@
                 </div>
                 
                 <div class="form-group">
+                    {!! Form::label('question_number', '質問数') !!}<br>
+                    {!! Form::radio('question_number',30) !!}
+                    30問
+                    {!! Form::radio('question_number',50) !!}
+                    50問
+                    {!! Form::radio('question_number',100) !!}
+                    100問
+                </div>
+                
+                <div class="form-group">
                     {!! Form::label('is_private', '自己分析を非公開にする') !!}<br>
                     {!! Form::radio('is_private',0) !!}
                     はい

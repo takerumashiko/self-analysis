@@ -23,9 +23,4 @@ class UsersController extends Controller
             'user' => $user,
         ]);
     }
-    
-    public function answers($id)
-    {
-        
-    }
 }

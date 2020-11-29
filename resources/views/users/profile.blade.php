@@ -12,8 +12,8 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item lead">いいね</li>
-                    <li class="list-group-item lead">自己分析を行う</li>
-                    <li class="list-group-item lead">他ユーザーの自己分析を見る</li>
+                    <li class="list-group-item lead">{!! link_to_route("questions.index",'自己分析を行う',[]) !!}</li>
+                    <li class="list-group-item lead">{!! link_to_route('users.index','他ユーザーの自己分析を見る',[]) !!}</li>
                 </ul>
             </div>
         </aside>

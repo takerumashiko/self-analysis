@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','gender','age','is_private'
+        'name', 'email', 'password','gender','age','is_private','question_number'
     ];
 
     /**
@@ -47,9 +47,4 @@ class User extends Authenticatable
         $this->loadCount(['answers']);
     }
     
-    public function is_answering($questionId)
-    {
-        // 回答しているユーザの中に $questionIdのものが存在するか
-        return $this->answers()->where('question_id', $questionId)->exists();
-    }
 }
