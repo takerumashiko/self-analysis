@@ -28,7 +28,7 @@
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::label('question_number', '質問数') !!}<br>
+                    {!! Form::label('question_number', '自己分析の質問数') !!}<br>
                     {!! Form::radio('question_number',30) !!}
                     30問
                     {!! Form::radio('question_number',50) !!}

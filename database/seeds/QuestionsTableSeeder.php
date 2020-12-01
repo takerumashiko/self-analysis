@@ -349,67 +349,67 @@ class QuestionsTableSeeder extends Seeder
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'あなたの好きなブランド・メーカーは？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '家族との間で、今までで一番いい思い出は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '家族との間で、今までで一番苦い思い出は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '家庭の経済状況はどうか？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '父親との関係は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '母親との関係は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '兄弟・姉妹との関係は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'あなたの好きな時間は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'あなたの嫌いな時間は？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'どんな勉強が好き？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'どんな勉強が嫌い？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'どんな仕事が好き？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => 'どんな仕事が嫌い？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '今後この自己分析をどのように生かしていきたいか？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '自己分析をして自分の目的は果たせたか？' ,
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '？' ,
+                'content' => '自己分析をして見つけた「人生の軸は」？' ,
                 'class' => 100,
             ]);
             
