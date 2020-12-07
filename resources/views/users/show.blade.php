@@ -17,22 +17,14 @@
         </aside>
         
         <div class="col-sm-9">
-            <h3 class="mt-3 mb-3 text-center">{{ Auth::user()->name }}さんの自己分析</h3>
-            {{-- 質問一覧 --}}
-            <table class="table table-borderd">
-                <thead>
-                    <tr>
-                        <th class="text-center">質問</th>
-                        <th class="text-center">回答</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </table>
+            <h3 class="mt-3 mb-3 text-center">{{ $user->name }}さんの自己分析　{{ $user->question_number }}問</h3>
+            <ol>
+                @foreach($questions as $question)
+                    <li>
+                        <p class="mt-5">{{ $question->content }}</p>
+                    </li>
+                @endforeach
+            </ol>
         </div>
         
     </div>
