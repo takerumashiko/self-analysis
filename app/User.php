@@ -42,9 +42,4 @@ class User extends Authenticatable
         return $this->belongsToMany(Question::class,'answers','user_id','question_id')->withTimestamps();  
     }
     
-    public function loadRelationshipCounts()
-    {
-        $this->loadCount(['answers']);
-    }
-    
 }

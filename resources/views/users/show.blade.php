@@ -18,14 +18,15 @@
         
         <div class="col-sm-9">
             <h3 class="mt-3 mb-3 text-center">{{ $user->name }}さんの自己分析　{{ $user->question_number }}問</h3>
-            <ol>
                 @foreach($questions as $question)
-                    <li>
-                        <p class="mt-5">{{ $question->content }}</p>
-                    </li>
+                        <p class="mt-5 ml-3">{{ $question->id }}. {{ $question->content }}</p>
                 @endforeach
-            </ol>
+            <div class="mt-5">
+                {{ $questions->links() }}
+            </div>
         </div>
+        
+        
         
     </div>
         

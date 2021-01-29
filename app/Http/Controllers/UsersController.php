@@ -22,11 +22,11 @@ class UsersController extends Controller
         $user = User::findOrFail($id);
         
         if($user->question_number === 30){
-            $questions = Question::where('class',30)->get();
+            $questions = Question::where('class',30)->paginate(20);
         }elseif($user->question_number === 50){
-            $questions = Question::whereIn('class',[30,50])->get();
+            $questions = Question::whereIn('class',[30,50])->paginate(20);
         }else{
-            $questions = Question::whereIn('class',[30,50,100])->get();
+            $questions = Question::whereIn('class',[30,50,100])->paginate(20);
         }
         return view('users.show',[
             'user' => $user,
