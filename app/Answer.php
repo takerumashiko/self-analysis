@@ -4,11 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Question extends Model
+class Answer extends Model
 {
-    protected $fillable = [
-        'content','class'
-    ];
+    protected $fillable = ['content'];
     
     public function user()
     {

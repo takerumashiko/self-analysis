@@ -369,7 +369,7 @@ class QuestionsTableSeeder extends Seeder
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
-                'content' => '母親との関係は？' ,
+                'content' => '母親との関係は？',
                 'class' => 100,
             ]);
             DB::table('questions')->insert([
@@ -411,6 +411,7 @@ class QuestionsTableSeeder extends Seeder
             DB::table('questions')->insert([
                 'content' => '自己分析をして見つけた「人生の軸は」？' ,
                 'class' => 100,
+                
             ]);
             
         }
